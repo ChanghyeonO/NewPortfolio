@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss/style.scss:css/style.css"
+    "sass": "sass --watch scss/style.scss:css/style.css",
+    "dev": "npx parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/ChanghyeonO/NewPortfolio#readme",
   "devDependencies": {
+    "parcel": "^2.7.0",
     "sass": "^1.55.0"
   }
 }
