@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ChanghyeonO/NewPortfolio/issues"
   },
-  "homepage": "https://github.com/ChanghyeonO/NewPortfolio#readme"
+  "homepage": "https://github.com/ChanghyeonO/NewPortfolio#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
 }
