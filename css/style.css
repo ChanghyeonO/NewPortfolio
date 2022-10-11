@@ -41,7 +41,7 @@ a {
 }
 #header .inner > h1 > a {
   font: bold 24px/1;
-  color: #444;
+  color: #00a7e1;
 }
 #header .menuWeb #gnb {
   position: absolute;
@@ -169,7 +169,7 @@ a {
 
 #visual {
   width: 100%;
-  height: calc(100vh - 121px);
+  height: calc(92vh - 121px);
   overflow: hidden;
   background: #000;
 }
@@ -184,8 +184,10 @@ a {
   margin: 0 auto;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 49%;
   transform: translate(-50%, -50%);
+  opacity: 0.8;
+  text-align: center;
 }
 #visual .inner h1 {
   font: normal 120px/1 "arial";
@@ -195,12 +197,14 @@ a {
 #visual .inner p {
   font: 16px/1.4 "arial";
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 #visual .inner a {
   display: block;
   width: 400px;
   height: 30px;
+  position: absolute;
+  left: 33%;
   border: 1px solid #bbb;
   border-radius: 20px;
   font: bold 11px/30px "arial";
@@ -208,8 +212,8 @@ a {
   text-align: center;
 }
 #visual .inner a:hover {
-  background: #fff;
-  color: #555;
+  background: #00a7e1;
+  color: #fff;
 }
 
 #news {
@@ -246,7 +250,7 @@ a {
 #news .inner .wrap article .pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: 0.5s;
 }
 #news .inner .wrap article .pic:hover img {

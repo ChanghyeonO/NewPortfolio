@@ -1,0 +1,19 @@
+{
+  "name": "portfoilo_layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChanghyeonO/NewPortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChanghyeonO/NewPortfolio/issues"
+  },
+  "homepage": "https://github.com/ChanghyeonO/NewPortfolio#readme"
+}
