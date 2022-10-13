@@ -191,6 +191,192 @@ a{
     }
 }
 
+//slider
+
+#slider{
+    width: 100%; 
+    height: 800px;
+    position: relative; 
+    overflow: hidden;
+    margin: 0px auto;
+
+    ul{
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        width: calc(100% * 5); 
+        height: 100%;
+
+        li{
+            width: calc(100% / 5); 
+            height: 100%; 
+            float: left;
+            font-size: 40px; 
+            color: #fff;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+
+            #product1, #product2, #product3, #product4, #product5{
+                width: 100%; height: 100%;
+                overflow: hidden;
+                background: #fff;
+                position: relative;
+                img{
+                    width: 100%; 
+                    height: 100%; 
+                    object-fit: cover;
+                }
+                .inner{
+                    width: 1180px; 
+                    margin: 0 auto; 
+                    position: absolute; 
+                    top: 40%; 
+                    left: 50%; 
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+                    
+                    h1{
+                        font: bold 20px/1 'arial'; 
+                        color: #fff; 
+                        margin-bottom: 5px;
+                    }
+            
+                    .text1{
+                       font: bold 40px/1.4 'arial'; 
+                       color: #fff; 
+                       margin-bottom: 10px; 
+                    }
+            
+                    .text2{
+                        font: bold 35px/1 'arial'; 
+                        color: #fff; 
+                        margin-bottom: 25px;
+                    }
+            
+                    .text3{
+                        font: bold 20px/1 'arial'; 
+                        color: #fff; 
+                        margin-bottom: 70px;
+                    }
+            
+                    a{
+                        display: relative; 
+                        width: 400px; 
+                        height: 30px;
+                        padding: 10px 40px;
+                        border: 1px solid #fff;
+                        border-radius: 20px; 
+                        font: normal 20px/30px 'arial'; 
+                        color: #fff;
+                        &:hover{
+                            background: #10b5ec; 
+                            color: #fff;
+                            border: 1px solid #10b5ec;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .prev{
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		transform: translate(-20vw, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		span{
+			font: bold 15px/1 'arial';
+			color: #00a7e1;
+			transform: translateX(30%);
+			transition: 0.5s;
+		}
+		&::before, &::after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #00a7e1;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform-origin: left center;
+			transform: rotate(-180deg);
+		}
+		&::after{
+			transform: rotate(180deg);
+		}
+		&:hover{
+			span{
+				opacity: 0;
+				transform: translateX(100%);
+			}
+			&::before{
+				transform: rotate(-30deg);
+				transition: 0.5s;
+			}
+			&::after{
+				transform: rotate(30deg);
+				transition: 0.5s;
+			}
+		}
+	}
+
+    .next{
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 50%;
+		right: 25%;
+		transform: translate(20vw,-50%);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		span{
+			font: bold 15px/1 'arial';
+			color: #00a7e1;
+			transform: translateX(-30%);
+			transition: 0.5s;
+		}
+		&::before, &::after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #00a7e1;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform-origin: right center;
+			transform: rotate(180deg);
+		}
+		&::after{
+			transform: rotate(-180deg);
+		}
+		&:hover{
+			span{
+				opacity: 0;
+				transform: translateX(-100%);
+			}
+			&::before{
+				transform: rotate(30deg);
+				transition: 0.5s;
+			}
+			&::after{
+				transform: rotate(-30deg);
+				transition: 0.5s;
+			}
+		}
+	}
+}
+
 //visual
 
 #visual{
@@ -208,10 +394,10 @@ a{
 
     .inner{
         width: 1180px;
-        margin: 0 auto;
+        margin: 100px auto;
         position: absolute;
-        top: 50%;
-        left: 49%;
+        top: 1200px;
+        left: 50%;
         transform: translate(-50%,-50%);
         opacity: 0.8;
         text-align: center;
@@ -306,114 +492,6 @@ a{
         }
     }
 }
-
-//slider
-
-#slider{
-    width: 100%; 
-    height: 800px;
-    position: relative; 
-    overflow: hidden;
-    margin: 0px auto;
-
-    ul{
-        position: absolute; 
-        top: 0; 
-        left: 0;
-        width: calc(100% * 5); 
-        height: 100%;
-
-        li{
-            width: calc(100% / 5); 
-            height: 100%; 
-            float: left;
-            font-size: 40px; 
-            color: #fff;
-            display: flex;
-            justify-content: center; 
-            align-items: center;
-
-            #product1, #product2, #product3, #product4, #product5{
-                width: 100%; height: calc(100vh - 121px);
-                overflow: hidden;
-                background: #fff;
-                position: relative;
-                img{
-                    width: 100%; 
-                    height: 100%; 
-                    object-fit: cover;
-                }
-                .inner{
-                    width: 1180px; 
-                    margin: 0 auto; 
-                    position: absolute; 
-                    top: 40%; 
-                    left: 50%; 
-                    transform: translate(-50%,-50%);
-                    text-align: center;
-                    
-                    h1{
-                        font: bold 20px/1 'arial'; 
-                        color: #fff; 
-                        margin-bottom: 5px;
-                    }
-            
-                    .text1{
-                       font: bold 40px/1.4 'arial'; 
-                       color: #fff; 
-                       margin-bottom: 10px; 
-                    }
-            
-                    .text2{
-                        font: bold 35px/1 'arial'; 
-                        color: #fff; 
-                        margin-bottom: 25px;
-                    }
-            
-                    .text3{
-                        font: bold 20px/1 'arial'; 
-                        color: #fff; 
-                        margin-bottom: 70px;
-                    }
-            
-                    a{
-                        display: relative; 
-                        width: 400px; 
-                        height: 30px;
-                        padding: 10px 40px;
-                        border: 1px solid #fff;
-                        border-radius: 20px; 
-                        font: normal 20px/30px 'arial'; 
-                        color: #fff;
-                        &:hover{
-                            background: #10b5ec; 
-                            color: #fff;
-                            border: 1px solid #10b5ec;
-                        }
-                    }
-                }
-            }
-            /*
-            nth-of-type은 li의 순서에 따라서 속성을 적용하는 것이기 때문에
-            loop slider의 경우처럼 li의 순서가 바뀌는경우에는 적용할 수 없다.
-
-
-            data- (data-index, data-grid, data- )
-            HTML5 부터 데이터 속성이라는 개념이 생김
-
-            데이터 속성은 'data-' 시작해고, 브라우저가 이런 데이터속성에는 어떤 행동에도 관여하지 않는다. 
-            hidden클래스를 부여하지 않고도 데이터를 저장할 수 있게되었다.
-            */
-        }
-    }
-    .prev{
-        position: absolute; top: 50%; left: 50px; margin-top: -50px;
-    }
-    .next{
-        position: absolute; top: 50%; right: 50px; margin-top: -50px;
-    }
-}
-
 
 //brand
 
