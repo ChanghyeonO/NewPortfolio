@@ -384,6 +384,7 @@ a{
     height: calc(92vh - 121px);
     overflow: hidden;
     background: #000;
+    position: relative;
     
     video{
         width: 100%;
@@ -394,9 +395,9 @@ a{
 
     .inner{
         width: 1180px;
-        margin: 100px auto;
+        margin: 0px auto;
         position: absolute;
-        top: 1200px;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         opacity: 0.8;
@@ -428,6 +429,7 @@ a{
             &:hover{
                 background: #00a7e1;
                 color: #fff;
+                border: 1px solid #00a7e1;
             }
         }
     }
