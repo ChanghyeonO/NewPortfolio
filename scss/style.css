@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -168,11 +167,312 @@ a {
   text-align: center;
 }
 
+#slider {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+}
+#slider ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+}
+#slider ul li {
+  width: 20%;
+  height: 100%;
+  float: left;
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider ul li #product1, #slider ul li #product2, #slider ul li #product3, #slider ul li #product4, #slider ul li #product5 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+#slider ul li #product1 img, #slider ul li #product2 img, #slider ul li #product3 img, #slider ul li #product4 img, #slider ul li #product5 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#slider ul li #product1 .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+#slider ul li #product1 .inner h1 {
+  font: bold 40px/1 "arial";
+  color: #000;
+  margin-bottom: 5px;
+}
+#slider ul li #product1 .inner .text1 {
+  font: normal 20px/1.4 "arial";
+  color: #000;
+  margin-bottom: 20px;
+}
+#slider ul li #product1 .inner a {
+  display: relative;
+  width: 400px;
+  height: 30px;
+  padding: 10px 40px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font: normal 20px/30px "arial";
+  color: #000;
+}
+#slider ul li #product1 .inner a:hover {
+  background: #10b5ec;
+  color: #000;
+  border: 1px solid #10b5ec;
+}
+#slider ul li #product2 .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#slider ul li #product2 .inner h1 {
+  font: bold 20px/1 "arial";
+  color: #fff;
+  margin-bottom: 5px;
+}
+#slider ul li #product2 .inner .text1 {
+  font: bold 40px/1.4 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+}
+#slider ul li #product2 .inner .text2 {
+  font: bold 35px/1 "arial";
+  color: #fff;
+  margin-bottom: 25px;
+}
+#slider ul li #product2 .inner .text2 .thin {
+  font-weight: lighter;
+}
+#slider ul li #product2 .inner .text3 {
+  font: bold 20px/1 "arial";
+  color: #fff;
+  margin-bottom: 70px;
+}
+#slider ul li #product2 .inner a {
+  display: relative;
+  width: 400px;
+  height: 30px;
+  padding: 10px 40px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font: normal 20px/30px "arial";
+  color: #fff;
+}
+#slider ul li #product2 .inner a:hover {
+  background: #10b5ec;
+  color: #fff;
+  border: 1px solid #10b5ec;
+}
+#slider ul li #product3 .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#slider ul li #product3 .inner h1 {
+  font: bold 40px/1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+}
+#slider ul li #product3 .inner .text1 {
+  font: normal 20px/1.4 "arial";
+  color: #fff;
+  margin-bottom: 30px;
+}
+#slider ul li #product3 .inner a {
+  display: relative;
+  width: 400px;
+  height: 30px;
+  padding: 10px 40px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font: normal 20px/30px "arial";
+  color: #fff;
+}
+#slider ul li #product3 .inner a:hover {
+  background: #10b5ec;
+  color: #fff;
+  border: 1px solid #10b5ec;
+}
+#slider ul li #product4 .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#slider ul li #product4 .inner h1 {
+  font: bold 40px/1.3 "arial";
+  color: #000;
+  margin-bottom: 10px;
+}
+#slider ul li #product4 .inner a {
+  display: relative;
+  width: 400px;
+  height: 30px;
+  padding: 10px 40px;
+  background: #00a7e1;
+  border: 1px solid #00a7e1;
+  border-radius: 20px;
+  font: normal 20px/30px "arial";
+  color: #fff;
+}
+#slider ul li #product4 .inner a:hover {
+  background: #fff;
+  color: #00a7e1;
+  border: 1x solid #00a7e1;
+  transition: 0.2s;
+}
+#slider ul li #product5 .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#slider ul li #product5 .inner a {
+  display: relative;
+  width: 400px;
+  height: 30px;
+  padding: 10px 40px;
+  background: transparent;
+  border: 1px solid #00a7e1;
+  border-radius: 20px;
+  font: normal 20px/30px "arial";
+  color: #fff;
+}
+#slider ul li #product5 .inner a:hover {
+  background: #00a7e1;
+  color: #fff;
+  border: 1x solid #00a7e1;
+  transition: 0.2s;
+}
+#slider .prev {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-20vw, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#slider .prev span {
+  font: bold 15px/1 "arial";
+  color: #00a7e1;
+  transform: translateX(30%);
+  transition: 0.5s;
+}
+#slider .prev::before, #slider .prev::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #00a7e1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-origin: left center;
+  transform: rotate(-180deg);
+}
+#slider .prev::after {
+  transform: rotate(180deg);
+}
+#slider .prev:hover span {
+  opacity: 0;
+  transform: translateX(100%);
+}
+#slider .prev:hover::before {
+  transform: rotate(-30deg);
+  transition: 0.5s;
+}
+#slider .prev:hover::after {
+  transform: rotate(30deg);
+  transition: 0.5s;
+}
+#slider .next {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(20vw, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#slider .next span {
+  font: bold 15px/1 "arial";
+  color: #00a7e1;
+  transform: translateX(-30%);
+  transition: 0.5s;
+}
+#slider .next::before, #slider .next::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #00a7e1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-origin: right center;
+  transform: rotate(180deg);
+}
+#slider .next::after {
+  transform: rotate(-180deg);
+}
+#slider .next:hover span {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+#slider .next:hover::before {
+  transform: rotate(30deg);
+  transition: 0.5s;
+}
+#slider .next:hover::after {
+  transform: rotate(-30deg);
+  transition: 0.5s;
+}
+
 #visual {
   width: 100%;
   height: calc(92vh - 121px);
   overflow: hidden;
   background: #000;
+  position: relative;
 }
 #visual video {
   width: 100%;
@@ -183,10 +483,10 @@ a {
 }
 #visual .inner {
   width: 1180px;
-  margin: 0 auto;
+  margin: 0px auto;
   position: absolute;
   top: 50%;
-  left: 49%;
+  left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.8;
   text-align: center;
@@ -216,6 +516,7 @@ a {
 #visual .inner a:hover {
   background: #00a7e1;
   color: #fff;
+  border: 1px solid #00a7e1;
 }
 
 #news {
@@ -265,207 +566,6 @@ a {
   font: 14px/1.3 "arial";
   color: #777;
   text-align: center;
-}
-
-#slider {
-  width: 100%;
-  height: 800px;
-  position: relative;
-  overflow: hidden;
-  margin: 0px auto;
-}
-#slider ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 500%;
-  height: 100%;
-}
-#slider ul li {
-  width: 20%;
-  height: 100%;
-  float: left;
-  font-size: 40px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*
-  nth-of-type은 li의 순서에 따라서 속성을 적용하는 것이기 때문에
-  loop slider의 경우처럼 li의 순서가 바뀌는경우에는 적용할 수 없다.
-
-
-  data- (data-index, data-grid, data- )
-  HTML5 부터 데이터 속성이라는 개념이 생김
-
-  데이터 속성은 'data-' 시작해고, 브라우저가 이런 데이터속성에는 어떤 행동에도 관여하지 않는다. 
-  hidden클래스를 부여하지 않고도 데이터를 저장할 수 있게되었다.
-  */
-}
-#slider ul li #product1, #slider ul li #product2, #slider ul li #product3, #slider ul li #product4, #slider ul li #product5 {
-  width: 100%;
-  height: calc(100vh - 121px);
-  overflow: hidden;
-  background: #fff;
-  position: relative;
-}
-#slider ul li #product1 img, #slider ul li #product2 img, #slider ul li #product3 img, #slider ul li #product4 img, #slider ul li #product5 img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#slider ul li #product1 .inner, #slider ul li #product2 .inner, #slider ul li #product3 .inner, #slider ul li #product4 .inner, #slider ul li #product5 .inner {
-  width: 1180px;
-  margin: 0 auto;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-#slider ul li #product1 .inner h1, #slider ul li #product2 .inner h1, #slider ul li #product3 .inner h1, #slider ul li #product4 .inner h1, #slider ul li #product5 .inner h1 {
-  font: bold 20px/1 "arial";
-  color: #fff;
-  margin-bottom: 5px;
-}
-#slider ul li #product1 .inner .text1, #slider ul li #product2 .inner .text1, #slider ul li #product3 .inner .text1, #slider ul li #product4 .inner .text1, #slider ul li #product5 .inner .text1 {
-  font: bold 40px/1.4 "arial";
-  color: #fff;
-  margin-bottom: 10px;
-}
-#slider ul li #product1 .inner .text2, #slider ul li #product2 .inner .text2, #slider ul li #product3 .inner .text2, #slider ul li #product4 .inner .text2, #slider ul li #product5 .inner .text2 {
-  font: bold 35px/1 "arial";
-  color: #fff;
-  margin-bottom: 25px;
-}
-#slider ul li #product1 .inner .text3, #slider ul li #product2 .inner .text3, #slider ul li #product3 .inner .text3, #slider ul li #product4 .inner .text3, #slider ul li #product5 .inner .text3 {
-  font: bold 20px/1 "arial";
-  color: #fff;
-  margin-bottom: 70px;
-}
-#slider ul li #product1 .inner a, #slider ul li #product2 .inner a, #slider ul li #product3 .inner a, #slider ul li #product4 .inner a, #slider ul li #product5 .inner a {
-  display: relative;
-  width: 400px;
-  height: 30px;
-  padding: 10px 40px;
-  border: 1px solid #fff;
-  border-radius: 20px;
-  font: normal 20px/30px "arial";
-  color: #fff;
-}
-#slider ul li #product1 .inner a:hover, #slider ul li #product2 .inner a:hover, #slider ul li #product3 .inner a:hover, #slider ul li #product4 .inner a:hover, #slider ul li #product5 .inner a:hover {
-  background: #10b5ec;
-  color: #fff;
-  border: 1px solid #10b5ec;
-}
-#slider .prev {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 55%;
-  left: 25%;
-  transform: translate(-20vw, -50%);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-#slider .prev span {
-  font: 11px/1 "arial";
-  color: #000;
-  transform: translateX(20%);
-  transition: 0.5s;
-  opacity: 1;
-}
-#slider .prev::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transition: 0.5s;
-  transform-origin: left center;
-  transform: rotate(-180deg);
-}
-#slider .prev::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #000;
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  transition: 0.5s;
-  transform-origin: left center;
-  transform: rotate(180deg);
-}
-#slider .prev:hover::before {
-  transform: rotate(-30deg);
-}
-#slider .prev:hover::after {
-  transform: rotate(30deg);
-}
-#slider .prev:hover span {
-  transform: translateX(100%);
-  opacity: 0;
-}
-#slider .next {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 55%;
-  right: 0%;
-  transform: translate(20vw, -50%);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-#slider .next span {
-  font: 11px/1 "arial";
-  color: #000;
-  transform: translateX(20%);
-  transition: 0.5s;
-  opacity: 1;
-}
-#slider .next::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transition: 0.5s;
-  transform-origin: right center;
-  transform: rotate(-180deg);
-}
-#slider .next::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #000;
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  transition: 0.5s;
-  transform-origin: right center;
-  transform: rotate(180deg);
-}
-#slider .next:hover::before {
-  transform: rotate(-30deg);
-}
-#slider .next:hover::after {
-  transform: rotate(30deg);
-}
-#slider .next:hover span {
-  transform: translateX(-100%);
-  opacity: 0;
 }
 
 #brand {
