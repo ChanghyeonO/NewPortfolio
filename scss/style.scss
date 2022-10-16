@@ -28,8 +28,6 @@ a{
 
 #header{
     width: 100%;
-    border-bottom: 1px solid #ddd;
-
     .inner{
         width: 1180px;
         height: 120px;
@@ -47,11 +45,11 @@ a{
     }
 
     .menuWeb{
+        
         #gnb{
             position: absolute;
             right: 0px;
             bottom: 0px;
-
             li{
                 float: left;
 
@@ -260,8 +258,9 @@ a{
                         color: #000;
                         &:hover{
                             background: #10b5ec; 
-                            color: #000;
+                            color: #fff;
                             border: 1px solid #10b5ec;
+                            transition: 0.2s;
                         }
                     }
                 }
@@ -316,6 +315,7 @@ a{
                             background: #10b5ec; 
                             color: #fff;
                             border: 1px solid #10b5ec;
+                            transition: 0.2s;
                         }
                     }
                 }
@@ -355,6 +355,7 @@ a{
                             background: #10b5ec; 
                             color: #fff;
                             border: 1px solid #10b5ec;
+                            transition: 0.2s;
                         }
                     }
                 }
@@ -386,7 +387,7 @@ a{
                         font: normal 20px/30px 'arial'; 
                         color: #fff;
                         &:hover{
-                            background: #fff; 
+                            background: transparent; 
                             color: #00a7e1;
                             border: 1x solid #00a7e1;
                             transition: 0.2s;
@@ -410,14 +411,14 @@ a{
                         height: 30px;
                         padding: 10px 40px;
                         background:transparent;
-                        border: 1px solid #00a7e1;
+                        border: 1px solid #fff;
                         border-radius: 20px; 
                         font: normal 20px/30px 'arial'; 
                         color: #fff;
                         &:hover{
                             background: #00a7e1; 
                             color: #fff;
-                            border: 1x solid #00a7e1;
+                            border: 1px solid #00a7e1;
                             transition: 0.2s;
                         }
                     }
@@ -576,6 +577,7 @@ a{
                 background: #00a7e1;
                 color: #fff;
                 border: 1px solid #00a7e1;
+                transition: 0.2;
             }
         }
     }
