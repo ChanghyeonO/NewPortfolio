@@ -5,21 +5,34 @@
 }
 #gallery{
     #searchBox{
-        width: 100%; padding: 50px; font-size: 0;
+        width: 100%; 
+        padding: 50px; 
+        font-size: 0;
+        text-align: center;
         #search{
-            width: 300px; height: 30px; border: 1px solid #333; padding-left:10px;
+            width: 300px; 
+            height: 40px; 
+            border: 1px solid #000; 
+            padding-left:10px;
+            border-radius: 15px;
 
         }
         .btnSearch{
-            width: 80px; height: 30px;
-            background: #333; font: bold 12px/30px 'arial'; color: #fff;
+            width: 80px; 
+            height: 40px;
+            background: #00a7e1; 
+            font: bold 12px/30px 'arial'; color: #fff;
             text-align: center;
-            border:none; cursor: pointer; margin-left: 10px; 
+            border:none; 
+            cursor: pointer; 
+            margin-left: 10px; 
             vertical-align: top;
+            border-radius: 15px;
         }
     }
     #wrap{
-        width: 100%; padding: 50px;
+        width: 100%; 
+        padding: 50px;
         .loading{
             width: 100px;
             position: fixed; top: 50%; left: 50%;
@@ -29,37 +42,55 @@
         }
         #list{
             width: 100%;
-            opacity: 0; transform: translateY(100px); transition: 1s;
+            opacity: 0; 
+            transform: translateY(100px); 
+            transition: 1s;
             &.on{
-                opacity: 1; transform: translateY(0px);
+                opacity: 1; 
+                transform: translateY(0px);
             }
             &::after{
-                content: ''; display: block; clear: both;
+                content: '';
+                 display: block; 
+                 clear: both;
             }
             li{
-                float: left; width: calc(100% / 4); padding: 10px;
+                float: left;
+                width: calc(100% / 4); 
+                padding: 10px;
                 div{
-                    width: 100%; padding: 20px;
+                    width: 100%; 
+                    padding: 20px;
                     box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
-                    border-radius: 5px;
+                    border-radius: 5%;
                     a{
                         >img{
-                            width: 100%; filter: grayscale(100%);
+                            width: 100%; 
+                            filter: grayscale(100%);
+                            border-radius: 5%;
                         }
                     }
                     p{
-                        font: 12px/1.2 'arial'; color: #777;
-                        margin-top: 10px; margin-bottom: 10px;
+                        font: bold 12px/1.2 'arial'; 
+                        color: #777;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
                     }
 
                     span{
-                        display: block; align-items: center; margin-top: 10px;
+                        display: block; 
+                        align-items: center; 
+                        margin-top: 10px;
+                        display: flex;
                         >img{
-                            width: 20px; height: 20px; border-radius: 50%;
+                            width: 20px; 
+                            height: 20px; 
+                            border-radius: 50%;
                             margin-right: 5px;
                         }
                         strong{
-                            font: 11px/1 'arial'; color: orange;
+                            font: 11px/1 'arial'; 
+                            color: #00a7e1;
                         }
                     }
                     &:hover a>img{filter: grayscale(0%);}

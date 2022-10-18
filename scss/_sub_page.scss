@@ -43,8 +43,9 @@ a{
         .menuWeb{
             #gnb{
                 position: absolute;
-                 right: 0px;
-                  bottom: 0px;
+                right: 0px;
+                bottom: 0px;
+                
                 li{
                     float: left;
                     a{
@@ -171,6 +172,7 @@ a{
         width: 1180px; 
         margin: 0 auto; 
         min-height: 500px;
+        text-align: center;
 
         h1{
             font: normal 50px/1 'arial'; 
@@ -179,12 +181,13 @@ a{
 
             span{
                 font: bold 35px/1 "맑은 고딕"; 
-                color: skyblue;
+                color: #10b5ec;
 
                 &::before{
                     content: '|'; 
                     margin-right: 20px;
                      margin-left: 10px;
+                     color: #10b5ec;
                 }
             }
         }

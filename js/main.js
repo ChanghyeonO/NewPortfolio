@@ -1,12 +1,13 @@
-const slider = document.querySelector("#slider");
-const ul = slider.querySelector("ul");
-const lis = ul.querySelectorAll("li");
+const slider = document.querySelector("slider");
+const ul = document.querySelector("ul");
+const lis = slider.querySelectorAll("li");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 
 let len = lis.length;
+console
 
 let enableClick = true;
 
