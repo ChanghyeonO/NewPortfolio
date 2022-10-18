@@ -944,6 +944,11 @@ a{
     }
 }
 
+#slider{
+    height: 0;
+    opacity: 0;
+}
+
     //visual
 #visual{
     height: calc(100vh - 101px);
