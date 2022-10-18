@@ -1,5 +1,10 @@
 @charset 'utf-8';
-
+@import 'sub_page.scss';
+@import 'community.scss';
+@import 'about.scss';
+@import 'gallery.scss';
+@import 'location.scss';
+@import 'youtube.scss';
 *{
     margin: 0px;
     padding: 0px;
@@ -52,12 +57,18 @@ a{
             bottom: 0px;
             li{
                 float: left;
-
                 a{
                     display: block;
                     padding: 14px 40px;
                     font: bold 14px/1 'arial';
                     color: #777;
+
+                    &:hover{
+                        background: #10b5ec;
+                        color: #fff;
+                        border-radius: 5px;
+                        transition: 0.5s;
+                    }
                 }
             }
         }
@@ -577,7 +588,7 @@ a{
                 background: #00a7e1;
                 color: #fff;
                 border: 1px solid #00a7e1;
-                transition: 0.2;
+                transition: 0.2s;
             }
         }
     }
@@ -913,4 +924,181 @@ a{
             color: #777;
         }
     }
+}
+
+//tablet
+@media screen and (max-width:1179px) {
+    //header
+#header{
+    .inner{
+        width: 100%; height: 100px;
+        h1{
+            left: 20px;
+        }
+        .menuWeb{
+            display: none;
+        }
+        .btnCall{
+            display: block;
+        }
+    }
+}
+
+// #slider{
+//     ul{
+//         img{
+            
+//         }
+//     }
+// }
+
+    //visual
+#visual{
+    height: calc(100vh - 101px);
+    background: url(img/visual1.jpg) no-repeat center/cover;
+    video{
+        display: none;
+    }
+    .inner{
+        width: 100%; padding: 0px 30px;
+        h1{
+            font: normal 14vmin/1 'arial';
+        }
+        a{
+            width: 100%;
+        }
+    }
+}
+
+    //news
+#news{
+    padding: 100px 30px;
+    .inner{
+        width: 100%;
+        .wrap{
+            article{
+                width: 49%; margin-right: 2%; margin-bottom: 60px;
+                &:nth-of-type(2n){
+                    margin-right: 0;
+                }
+                .pic{
+                    height: 20vmax;
+                }
+            }
+        }
+    }
+}
+
+    //brand
+#brand{
+    padding: 100px 30px;
+    .inner{
+        width: 100%;
+        .wrap{
+            article{
+                &:nth-of-type(1){
+                    width: 49%; margin-right: 2%;
+                }
+                &:nth-of-type(2){
+                    width: 49%;    margin-right: 0px; margin-bottom: 20px;
+                }
+                &:nth-of-type(3){
+                    width: 49%;
+                }
+                &:nth-of-type(4){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+    //banner
+#banner{
+    padding: 150px 30px; 
+    .inner{
+        width: 100%;
+    }
+}
+
+    //comments
+#comments{
+    padding: 100px 30px;
+    .inner{
+        width: 100%;
+    }
+}
+
+    //footer
+#footer{
+    padding: 80px 30px;
+    .inner{
+        width: 100%;
+    }
+}
+}
+
+//mobile
+@media screen and (max-width:539px) {
+    //header
+
+    //visual
+#visual{
+    .inner{
+        h1{
+            font: normal 12vmin/1 'arial';
+        }
+    }
+}
+
+    //news
+#news{
+    .inner{
+        .wrap{
+            article{
+                width: 100%; margin-right: 0%;
+                .pic{
+                    height: 30vmax;
+                }
+            }
+        }
+    }
+}
+
+    //brand
+#brand{
+    .inner{
+        .wrap{
+            article{
+                &:nth-of-type(1){
+                    width: 100%; height: 400px; padding: 50px; margin-right: 0%; margin-bottom: 20px;
+                }
+                &:nth-of-type(2){
+                    width: 100%;
+                }
+                &:nth-of-type(3){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+    //banner
+
+    //comments
+
+    //footer
+#footer{
+    .inner{
+        h1{
+            margin-bottom: 20px;
+        }
+        ul{
+            width: 100%;
+            li{
+                margin-left: 0px; margin: 5px;
+            }
+        }
+    }
+}
 }
