@@ -1673,20 +1673,15 @@ a {
   }
   #visual {
     height: calc(100vh - 101px);
-    background: url(img/visual1.jpg) no-repeat center/cover;
-  }
-  #visual video {
-    display: none;
   }
   #visual .inner {
     width: 100%;
-    padding: 0px 30px;
   }
   #visual .inner h1 {
     font: normal 14vmin/1 "arial";
   }
   #visual .inner a {
-    width: 100%;
+    width: 33%;
   }
   #news {
     padding: 100px 30px;

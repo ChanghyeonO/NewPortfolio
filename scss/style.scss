@@ -944,27 +944,16 @@ a{
     }
 }
 
-// #slider{
-//     ul{
-//         li{
-            
-//         }
-//     }
-
     //visual
 #visual{
     height: calc(100vh - 101px);
-    background: url(img/visual1.jpg) no-repeat center/cover;
-    video{
-        display: none;
-    }
     .inner{
-        width: 100%; padding: 0px 30px;
+        width: 100%;
         h1{
             font: normal 14vmin/1 'arial';
         }
         a{
-            width: 100%;
+            width: 33%;
         }
     }
 }
