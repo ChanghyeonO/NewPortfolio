@@ -1,13 +1,10 @@
-const slider = document.querySelector("slider");
-const ul = document.querySelector("ul");
-const lis = slider.querySelectorAll("li");
+const slider = document.querySelector("#slider");
+const ul = slider.querySelector("ul");
+const lis = ul.querySelectorAll("li");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-const btnCall = document.querySelector(".btnCall");
-const menuMo = document.querySelector(".menuMo");
 
 let len = lis.length;
-console
 
 let enableClick = true;
 
@@ -22,7 +19,7 @@ next.addEventListener("click",(e)=>{
         enableClick = false;
          nextSlide();
     }
-   
+
 })
 
 prev.addEventListener("click",(e)=>{
@@ -31,16 +28,16 @@ prev.addEventListener("click",(e)=>{
         enableClick = false;
         prevSlide();
     }
-    
+
 })
 
 //초기화 함수
 function init(){
-    ul.style.left = "-100%";
-    ul.prepend(ul.lastElementChild); 
-    ul.style.width = `${100 * len}%`;
+    ul.style.left = "-100%"; //ul의 초기 위치값을 지정하는것
+    ul.prepend(ul.lastElementChild); //로딩후 1번첫번째 li가 frame에 보일수 있도록 마지막 li를 앞에 붙임으로써 1번이 첫번째가 아닌 두번째에 위치시킨다.
+    ul.style.width = `${100 * len}%`; //ul너비값 li갯수를 맞춰서 자동계산해주는 것
     lis.forEach((el)=>{
-        el.style.width = `${100 / len}%`;
+        el.style.width = `${100 / len}%`; //각 li의 너비값을 자동으로 계산해준다.
     })
 }
 
@@ -53,7 +50,7 @@ function nextSlide(){
         callback : ()=>{
             ul.style.left = "-100%";
             ul.append(ul.firstElementChild);
-            enableClick = true;
+            enableClick = true; //모션이 끝나고 enableClilk을 true로 변경
         }
     })
 }
@@ -69,14 +66,4 @@ function prevSlide(){
             enableClick = true;
         }
     })
-}
-
-btnCall.onclick = function(e){
-    //링크이동금지
-    e.preventDefault();
-
-    //btnCall에 on이 있으면 제거하고, 없으면 추가
-    btnCall.classList.toggle("on");
-    //menuMo에 on이 있으면 제거하고, 없으면 추가
-    menuMo.classList.toggle('on');
 }

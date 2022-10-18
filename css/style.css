@@ -136,7 +136,7 @@ a {
 #header_sub .inner .menuMo {
   width: 270px;
   height: 100vh;
-  background: #333;
+  background: #10b5ec;
   position: fixed;
   top: 0;
   left: -270px;
@@ -149,7 +149,7 @@ a {
 }
 #header_sub .inner .menuMo h1 {
   padding-bottom: 30px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #fff;
 }
 #header_sub .inner .menuMo h1 a {
   display: block;
@@ -159,15 +159,15 @@ a {
 }
 #header_sub .inner .menuMo h1 span {
   font-size: 12px;
-  color: #aaa;
+  color: #fff;
 }
 #header_sub .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #fff;
   font: bold 14px/1 "arial";
-  color: #888;
+  color: #fff;
   text-align: center;
 }
 
@@ -178,7 +178,7 @@ a {
 .content .sub_vidual {
   width: 100%;
   height: 250px;
-  background: #bbb;
+  background: #000;
   margin-bottom: 200px;
 }
 .content .inner {
@@ -189,7 +189,7 @@ a {
 }
 .content .inner h1 {
   font: normal 50px/1 "arial";
-  color: #10b5ec;
+  color: #000;
   margin-bottom: 60px;
 }
 .content .inner h1 span {
@@ -454,21 +454,21 @@ a {
     display: none;
   }
 }
-.department .sub_vidual {
+.about .sub_vidual {
   background: url(../img/Anker-bannerlogo.png) no-repeat center/contain;
 }
-.department .inner .divison {
+.about .inner .divison {
   width: 100%;
   height: 600px;
   background: url(../img/bgDIvision.jpg) no-repeat center/contain;
 }
-.department .inner .divison .div_tree {
+.about .inner .divison .div_tree {
   position: absolute;
   top: -9999px;
   opacity: 1;
   transition: 1s;
 }
-.department .inner .divison .div_tree li span {
+.about .inner .divison .div_tree li span {
   display: block;
   width: 40%;
   height: 50px;
@@ -480,7 +480,7 @@ a {
   margin-bottom: 20px;
   position: relative;
 }
-.department .inner .divison .div_tree li span::after {
+.about .inner .divison .div_tree li span::after {
   content: "";
   display: block;
   width: 1px;
@@ -490,11 +490,11 @@ a {
   top: 50px;
   left: 50px;
 }
-.department .inner .divison .div_tree li ul li span {
+.about .inner .divison .div_tree li ul li span {
   background: #666;
   transform: translateX(70px);
 }
-.department .inner .divison .div_tree li ul li span::before {
+.about .inner .divison .div_tree li ul li span::before {
   content: "";
   display: block;
   width: 20px;
@@ -504,46 +504,46 @@ a {
   top: 50%;
   left: -20px;
 }
-.department .inner .divison .div_tree li ul li:nth-of-type(1) span::after {
+.about .inner .divison .div_tree li ul li:nth-of-type(1) span::after {
   display: none;
 }
-.department .inner .divison .div_tree li ul li:nth-of-type(2) span::after {
+.about .inner .divison .div_tree li ul li:nth-of-type(2) span::after {
   display: none;
 }
-.department .inner .divison .div_tree li ul li:nth-of-type(3) span::after {
+.about .inner .divison .div_tree li ul li:nth-of-type(3) span::after {
   height: 115px;
 }
-.department .inner .divison .div_tree li ul li:nth-of-type(4) span::after {
+.about .inner .divison .div_tree li ul li:nth-of-type(4) span::after {
   height: 185px;
 }
-.department .inner .divison .div_tree li ul li:nth-of-type(5) span::after {
+.about .inner .divison .div_tree li ul li:nth-of-type(5) span::after {
   height: 115px;
 }
-.department .inner .divison .div_tree li ul li:nth-of-type(6) span::after {
+.about .inner .divison .div_tree li ul li:nth-of-type(6) span::after {
   height: 185px;
 }
-.department .inner .divison .div_tree li ul li:nth-of-type(7) span::after {
+.about .inner .divison .div_tree li ul li:nth-of-type(7) span::after {
   height: 115px;
 }
-.department .inner .divison .div_tree li ul li ul li span {
+.about .inner .divison .div_tree li ul li ul li span {
   background: #999;
   transform: translateX(140px);
 }
-.department .inner .divison .div_tree li ul li ul li span::after {
+.about .inner .divison .div_tree li ul li ul li span::after {
   display: none;
 }
 
 @media screen and (max-width: 1179px) {
-  .department .inner .divison {
+  .about .inner .divison {
     height: 60vh;
   }
 }
 @media screen and (max-width: 539px) {
-  .department .inner .divison {
+  .about .inner .divison {
     background: none;
     height: auto;
   }
-  .department .inner .divison .div_tree {
+  .about .inner .divison .div_tree {
     position: relative;
     top: 0;
     opacity: 1;
@@ -992,7 +992,7 @@ a {
 #header .menuMo {
   width: 270px;
   height: 100vh;
-  background: #333;
+  background: #10b5ec;
   position: fixed;
   top: 0;
   left: -270px;
@@ -1005,7 +1005,7 @@ a {
 }
 #header .menuMo h1 {
   padding-bottom: 30px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #fff;
 }
 #header .menuMo h1 a {
   display: block;
@@ -1015,15 +1015,15 @@ a {
 }
 #header .menuMo h1 span {
   font-size: 12px;
-  color: #aaa;
+  color: #fff;
 }
 #header .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #fff;
   font: bold 14px/1 "arial";
-  color: #888;
+  color: #fff;
   text-align: center;
 }
 

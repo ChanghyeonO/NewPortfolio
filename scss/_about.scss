@@ -1,4 +1,4 @@
-.department{
+.about{
     .sub_vidual{
         background: url(../img/Anker-bannerlogo.png) no-repeat center/contain;
     }
@@ -74,7 +74,7 @@
 }
 
 @media screen and (max-width:1179px) {
-    .department{
+    .about{
         .inner{
             .divison{
             height: 60vh;
@@ -85,7 +85,7 @@
 }
 
 @media screen and (max-width:539px) {
-    .department{
+    .about{
         .inner{
             .divison{
             background: none; height: auto;
