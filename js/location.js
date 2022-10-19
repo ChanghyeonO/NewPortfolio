@@ -1,4 +1,4 @@
-let container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 const t_on = document.querySelectorAll(".traffic li")[0];
 const t_off = document.querySelectorAll(".traffic li")[1];
 const branch_btns = document.querySelectorAll(".branch li");
@@ -7,7 +7,7 @@ let zoom = true;
 
 
 var options = { //지도를 생성할 때 필요한 기본 옵션
-	center: new kakao.maps.LatLng(37.507025, 126.7563481), //지도의 중심좌표.
+	center: new kakao.maps.LatLng(37.507025, 126.7563481), //지도의 중심좌표. 문제발견
 	level: 3 //지도의 레벨(확대, 축소 정도)
 };
 
@@ -17,24 +17,24 @@ var markerOptions =[
     {
         title:"본점",
         latlag: new kakao.maps.LatLng(37.507025, 126.7563481),
-        imgSrc : "img/marker1.png",
-        imgSize : new kakao.maps.Size(232, 99),
+        imgSrc : "img/marker.png",
+        imgSize : new kakao.maps.Size(60, 90),
         imgPos : {offset: new kakao.maps.Point(116, 69)},
         button : branch_btns[0]
     },
     {
         title:"지점1",
         latlag: new kakao.maps.LatLng(37.5116828, 127.059151),
-        imgSrc : "img/marker2.png",
-        imgSize : new kakao.maps.Size(232, 99),
+        imgSrc : "img/marker.png",
+        imgSize : new kakao.maps.Size(60, 90),
         imgPos : {offset: new kakao.maps.Point(116, 69)},
         button : branch_btns[1]
     },
     {
         title:"지점2",
         latlag: new kakao.maps.LatLng(37.5258975, 126.9284261),
-        imgSrc : "img/marker3.png",
-        imgSize : new kakao.maps.Size(232, 99),
+        imgSrc : "img/marker.png",
+        imgSize : new kakao.maps.Size(60, 90),
         imgPos : {offset: new kakao.maps.Point(116, 69)},
         button : branch_btns[2]
     }
