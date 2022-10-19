@@ -1431,7 +1431,7 @@ a {
 
 #brand {
   width: 100%;
-  padding: 200px;
+  padding: 100px 20px;
   background: #eee;
 }
 #brand .inner {
@@ -1745,6 +1745,10 @@ a {
   }
 }
 @media screen and (max-width: 539px) {
+  #slider {
+    height: 0;
+    opacity: 0;
+  }
   #visual .inner h1 {
     font: normal 12vmin/1 "arial";
   }
