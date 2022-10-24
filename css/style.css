@@ -853,6 +853,38 @@ aside .close {
   cursor: pointer;
 }
 
+.main {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.main .logo {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font: bold 20px/1 "arial";
+}
+.main .container #login {
+  width: 100%;
+  background-color: skyblue;
+  border-color: transparent;
+  color: white;
+}
+.main .container .account {
+  display: block;
+  margin-bottom: 3px;
+  padding: 3px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+.main .container #alert {
+  border-color: transparent;
+}
+
 * {
   margin: 0px;
   padding: 0px;
